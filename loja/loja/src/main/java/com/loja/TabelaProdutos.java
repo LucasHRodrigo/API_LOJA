@@ -9,7 +9,7 @@ public class TabelaProdutos {
     //No construtor, a lista de produtos sera preenchida :)
     public TabelaProdutos() {
         Produto caneta = new Produto(1, "Caneta BIC", "Caneta BIC na cor azul", 1.99);
-        Produto borracha = new Produto(1, "Borracha Branca", "Borracha branca comum", 3.99);
+        Produto borracha = new Produto(2, "Borracha Branca", "Borracha branca comum", 3.99);
         Produto lapis = new Produto(3, "Lapis Faber Castel", "Lapis Faber Castel Comum", 2.99);
         Produto apontador = new Produto(4, "Apontador", "Apontador comum com reservatório", 5.99);
         Produto caderno = new Produto(5, "Caderno com espiral", "Caderno espiral com 96 folhas", 15.99);
@@ -34,6 +34,18 @@ public class TabelaProdutos {
     //metodo que retorna todos os produtos da lista
     public List<Produto> buscarTodosOsProdutos() {
         return this.getProdutos();
+    }
+
+    //metodo que busca encontrar um produto pelo ID. Quando encontrado, o programa encerra.
+    public Produto buscarProdutoPeloId(int produtoId) {
+        Produto produtoProcurado = null;
+        for (Produto p: this.produtos) {
+            if (p.getId() == produtoId) {
+                produtoProcurado = p;
+                break;
+            }
+        }
+        return produtoProcurado;
     }
 }
 
