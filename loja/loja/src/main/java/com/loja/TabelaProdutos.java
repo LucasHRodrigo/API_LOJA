@@ -15,6 +15,9 @@ public class TabelaProdutos {
         Produto caderno = new Produto(5, "Caderno com espiral", "Caderno espiral com 96 folhas", 15.99);
         Produto caderno2 = new Produto(6, "Caderno com espiral", "Caderno espiral com 360 folhas", 35.99);
         Produto cadernoSemPauta = new Produto(7, "Caderno sem pauta", "Caderno sem pauta com 90 folhas", 11.99);
+        Produto pasta = new Produto(8, "Pasta", "Pasta L transparente comum", 5.99);
+        Produto lapiseira = new Produto(9, "Lapiseira", "Lapiseira 0.5", 4.99);
+        Produto giz = new Produto(10, "Giz de cera", "Kit de giz de cera colorido", 11.99);
 
         this.produtos.add(caneta);
         this.produtos.add(lapis);
@@ -23,6 +26,9 @@ public class TabelaProdutos {
         this.produtos.add(caderno);
         this.produtos.add(caderno2);
         this.produtos.add(cadernoSemPauta);
+        this.produtos.add(pasta);
+        this.produtos.add(lapiseira);
+        this.produtos.add(giz);
 
 
     }
