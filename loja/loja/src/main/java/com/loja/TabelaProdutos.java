@@ -83,5 +83,15 @@ public class TabelaProdutos {
             produtoProcurado.setValorUnitario(produtoAtualizar.getValorUnitario());
         }
     }
+
+    /**
+     * metodo que remove um produto da lista
+     * utiliza como base o proprio objeto para remover
+     * @param produtoId
+     */
+    public void removerProduto(int produtoId) {
+        Produto produtoRemover = this.buscarProdutoPeloId(produtoId);
+        this.produtos.remove(produtoRemover);
+    }
 }
 
